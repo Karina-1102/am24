@@ -1,0 +1,104 @@
+
+
+.container h3 {margin:30px 0 15px 0;}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #1a1a1a; /* Темный фон вокруг сайта, который видно ТОЛЬКО на ПК */
+	display: flex;
+	justify-content: center;   /* Центрирует сайт-полосу на экране компьютера */
+	min-height: 100vh;
+	font-family: sans-serif;
+}
+.app-wrapper{
+	width: 100%;
+	max-width: 1200px;          /* Жесткое ограничение ширины (размер смартфона) на компьютерах */
+	min-height: 100vh;         /* Всегда растянут на всю высоту экрана */
+	background-color: #252525; /* Фон самого сайта */
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Красивая тень, отделяющая сайт от фона ПК */
+	display: flex;
+	flex-direction: column;    /* Все новые блоки будут идти строго вертикально вниз */
+	box-sizing: border-box;
+}
+
+.black_plashk{
+	background-color: black ;
+	text-align: center;
+	height: 10vw
+}
+
+.first_plashk {
+	display: flex;
+	/* justify-content: space-between; Расталкивает текст влево, а логотип вправо */
+	align-items: center;
+	
+	box-sizing: border-box;
+	background-color: #6C84B2;
+	/* height: clamp(8vw, 10vw, 13vw);  */
+	height: 80px;
+	/* padding: 5px; */
+}
+
+.logo {
+	margin-right:4vw;
+	display: flex;
+	align-items: center;
+	/* justify-content: flex-end; Выравнивает картинку по правому краю внутри ссылки */
+	height: 100%; /* Ссылка занимает всю высоту плашки */
+}
+
+.logo_img {
+	/* Картинка всегда будет занимать ровно 60% от высоты плашки, */
+	/* независимо от того, открыт сайт на огромном мониторе или маленьком телефоне */
+	margin-left:  3vw;
+	height: 80%;                    
+	width: auto;                    
+	object-fit: contain;
+}
+
+.city_text {
+	/* flex-direction: row; */
+	display: flex;
+	font-size: clamp(1.2rem, 1.3vw, 3rem);
+	/* font-size: 1.15rem; */
+	color: #000000; /* Цвет текста для примера */
+	/* justify-content: space-between; */
+}
+.YCK{
+	font-size: clamp(1.2rem, 1.3vw, 3rem);
+	color: #fffcfc;
+	margin-left: auto;
+	display: flex;
+}
+.t{
+	text-decoration: none;
+	/* margin-right: 20px; */
+	margin-right: 3vw;
+	/* right:  100%; */
+	cursor: pointer;
+	transition: opacity 0.2s;
+}
+.t:hover {
+	opacity: 0.8;
+}
+
+.avtomoiki{
+	/* display: flex; */
+	text-align: center;
+	font-size: clamp(1.7rem, 1.3vw, 3rem);
+	color: #fffcfc;
+}
+.contain_rtsp{
+	/* object-fit: contain; */
+	width: 100%;
+	max-width: 1200px;
+	/* background-color: #6C84B2; */
+	/* padding: 3vw; */
+	margin-top: 1vw;
+	margin-bottom: 3vw;
+}
+.rtsp{
+                   
+	width: 100%;                    
+	object-fit: contain;
+}
