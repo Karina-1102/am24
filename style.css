@@ -1,4 +1,9 @@
-.container h3 { margin: 30px 0 15px 0; }
+html {
+	/* Шрифт будет плавно расти от 12px на смартфонах до 16px на ноутбуках. */
+	/* Так как все элементы ниже настроены в rem, они будут уменьшаться и увеличиваться */
+	/* строго СИНХРОННО, как при зуме страницы. */
+	font-size: clamp(12px, 1.25vw, 16px); 
+}
 
 body {
 	margin: 0;
@@ -21,99 +26,96 @@ body {
 	box-sizing: border-box;
 }
 
-/* ИСПРАВЛЕНО: Заменили 10vw на адаптивный clamp, чтобы плашка не схлопывалась на смартфонах */
+/* 2. ЧЕРНАЯ ПЛАШКА */
 .black_plashk {
 	background-color: black;
 	text-align: center;
-	height: clamp(35px, 5vw, 50px); 
+	height: 2.5rem; /* Высота жестко привязана к масштабу букв */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+.container h3 { 
+	margin: 2rem 0 1rem 0; 
+}
+
+/* 3. СИНЯЯ ШАПКА */
 .first_plashk {
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
 	background-color: #6C84B2;
-	height: 80px;
-	/* Добавили внутренний отступ, чтобы на смартфонах элементы не прилипали к краям экрана */
-	padding: 0 15px; 
+	height: 5rem;        /* Высота шапки теперь адаптивна и зависит от html */
+	padding: 0 1.5rem;   /* Пропорциональные отступы внутри шапки */
 }
 
 .logo {
-	/* ИСПРАВЛЕНО: заменили 4vw на фиксированный отступ */
-	margin-right: 20px;
+	margin-right: 1.5rem; 
 	display: flex;
 	align-items: center;
 	height: 100%; 
 }
 
 .logo_img {
-	/* ИСПРАВЛЕНО: убрали margin-left: 3vw, так как теперь за левый отступ отвечает padding у first_plashk */
-	margin-left: 0;
-	height: 100%;                    
+	margin-left: 1rem;
+	height: 100%; /* Картинка занимает 100% от высоты ссылки и масштабируется вместе с ней */
 	width: auto;                    
 	object-fit: contain;
 }
 
+/* 4. ТЕКСТ ГОРОДА */
 .city_text {
 	display: flex;
-	/* ИСПРАВЛЕНО: На смартфонах минимальный размер теперь 1rem (16px), чтобы текст оставался читаемым */
-	font-size: clamp(1rem, 1.5vw, 1.4rem);
+	font-size: 1.25rem; /* Размер букв всегда пропорционален шапке на любом устройстве */
 	color: #000000; 
 	font-weight: bold;
-	/* Не дает тексту меню наезжать на город на маленьких экранах */
-	margin-right: 15px; 
+	white-space: nowrap; /* Запрещаем тексту некрасиво переноситься */
 }
 
+/* 5. МЕНЮ ССЫЛОК */
 .YCK {
-	/* ИСПРАВЛЕНО: Минимальный порог шрифта для меню увеличен до 0.95rem */
-	font-size: clamp(0.95rem, 1.4vw, 1.3rem);
+	font-size: 1.2rem;
 	color: #fffcfc;
-	margin-left: auto;
+	margin-left: auto; /* Жестко выталкивает блок со ссылками в правый бок */
 	display: flex;
-	/* Чтобы ссылки на смартфонах не переносились хаотично, разрешаем им сжиматься аккуратно */
-	flex-shrink: 0; 
+	white-space: nowrap; 
 }
 
 .t {
 	text-decoration: none;
 	color: #fffcfc;
-	/* ИСПРАВЛЕНО: Заменили 3vw на фиксированные 15px, чтобы ссылки стояли ровно на любом экране */
-	margin-right: 15px;
+	margin-right: 1.5rem; /* Одинаковое, пропорциональное расстояние между ссылками */
 	cursor: pointer;
 	transition: opacity 0.2s;
 }
 
-/* У последней ссылки убираем правый отступ, чтобы она идеально прилегала к правому краю */
 .t:last-child {
-	margin-right: 0;
+	margin-right: 0; /* Убираем лишний отступ у последней ссылки, чтобы она встала ровно в край */
 }
 
 .t:hover {
 	opacity: 0.8;
 }
 
+/* 6. НИЖНИЕ БЛОКИ И КАРТИНКИ */
 .avtomoiki {
 	text-align: center;
-	/* ИСПРАВЛЕНО: Минимальный шрифт заголовка на смартфонах теперь 1.4rem */
-	font-size: clamp(1.4rem, 2.2vw, 2.5rem);
+	font-size: 2rem;
 	color: #fffcfc;
-	padding: 10px;
+	padding: 1rem;
 }
 
 .contain_rtsp {
 	width: 100%;
 	max-width: 1200px;
-	/* ИСПРАВЛЕНО: Заменили vw на стабильные пиксели для внешних отступов */
-	margin-top: 15px;
-	margin-bottom: 30px;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 	box-sizing: border-box;
 }
 
 .rtsp {
 	width: 100%;                    
 	object-fit: contain;
-	display: block; /* Убирает лишние микро-отступы снизу картинки */
+	display: block; 
 }
