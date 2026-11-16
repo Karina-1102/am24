@@ -305,7 +305,7 @@ body {
 	/* Компактный подвал в 2 строки */
 	.footer_box {
 		min-height: auto;
-		padding: 15px 10px;
+		padding: 20px 10px;
 	}
 
 	.box_text_footer {
@@ -315,12 +315,13 @@ body {
 		gap: 3px;
 	}
 
-	.q, .oferta {
+	.q{
 		font-size: 0.75rem;
-		/* margin: 0; */
+		margin: 0; 
 
 	.oferta{
-		margin-bottom:15px;
+		margin-top:20px;
+		margin-bottom:20px;
 	}
 	}
 }
