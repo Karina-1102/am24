@@ -243,7 +243,7 @@ body {
 		word-wrap: break-word;
 		flex-wrap: wrap;
 		text-align: center;
-		transform: translateX(50%);
+		transform: translateX(20%);
 		margin: 0;
 	}
 
