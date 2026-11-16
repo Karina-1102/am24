@@ -272,6 +272,7 @@ body {
 
 	.yslygi_text_all {
 		margin: 15px 20px;
+		padding-bottom: 20px;
 	}
 
 	.p {
@@ -322,7 +323,7 @@ body {
 	.q{
 		font-size: 0.75rem;
 		margin: 0; 
-
+	}
 	.oferta{
 		font-size: 0.75rem;
 		margin-top:20px;
