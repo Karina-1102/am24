@@ -225,6 +225,7 @@ body {
 	}
 
 	.city_text {
+		margin-left: 0;
 		font-size: 0.78rem;
 		white-space: nowrap; /* текст в одну строку */
 		overflow: hidden;
