@@ -218,6 +218,7 @@ body {
 		padding: 0 15px;
 		gap: 6px;
 		flex-wrap: nowrap; /* запрещает перенос на вторую строку */
+		position: relative;
 	}
 
 	.logo {
@@ -241,6 +242,9 @@ body {
 		white-space: normal;
 		word-wrap: break-word;
 		flex-wrap: wrap;
+		text-align: center;
+		transform: translateX(100%);
+		margin: 0;
 	}
 
 	/* Белые слова справа оформлены как кнопки в строку */
