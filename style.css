@@ -199,117 +199,131 @@ body {
 
 
 
-@media (max-width: 768px) {
-	.black_plashk {
-		height: 40px; /* фиксируем высоту, чтобы в vw она не сплющивалась */
-	}
-
-	.first_plashk {
-		height: auto;
-		min-height: 70px;
-		padding: 10px 15px;
-		flex-wrap: wrap; /* разрешаем перенос элементов, если им тесно */
-		gap: 10px;
-	}
-
-	.logo_img {
-		height: 50px;
-		margin-left: 0;
-	}
-
-	.yslygi_text_all {
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-
-	.container_last_blue {
-		padding: 20px;
-	}
-}
-
 /* =========================================
-   АДАПТИВ ДЛЯ СМАРТФОНОВ (до 480px)
+   МОБИЛЬНАЯ ВЕРСИЯ (ПЛАНШЕТЫ И ТЕЛЕФОНЫ)
    ========================================= */
-@media (max-width: 480px) {
-	/* Перестраиваем шапку в аккуратную колонку или два ряда */
+@media (max-width: 768px) {
+	/* Узкая чёрная полоса сверху */
+	.black_plashk {
+		height: 15px;
+	}
+
+	/* Узкая шапка строго в одну строку */
 	.first_plashk {
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		padding: 15px 10px;
+		height: 48px;
+		padding: 0 8px;
+		gap: 6px;
+		flex-wrap: nowrap; /* запрещает перенос на вторую строку */
 	}
 
 	.logo {
-		margin-right: 0;
+		margin-right: 4px;
+		height: 100%;
+		flex-shrink: 0;
 	}
 
 	.logo_img {
-		height: 45px;
+		margin-left: 0;
+		height: 60%;
+		width: auto;
 	}
 
 	.city_text {
-		font-size: 1rem;
-		justify-content: center;
+		font-size: 0.78rem;
+		white-space: nowrap; /* текст в одну строку */
+		overflow: hidden;
+		text-overflow: ellipsis; /* аккуратное троеточие, если не влезает */
 	}
 
+	/* Белые слова справа оформлены как кнопки в строку */
 	.YCK {
-		margin-left: 0; /* убираем сдвиг вправо, чтобы меню встало по центру */
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 10px;
-		font-size: 1rem;
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		flex-shrink: 0;
 	}
 
 	.t {
 		margin-right: 0;
-		padding: 5px 8px; /* увеличиваем область нажатия пальцем */
+		display: inline-block;
+		color: #fffcfc;
+		background-color: rgba(0, 0, 0, 0.25);
+		border: 1px solid rgba(255, 255, 255, 0.45);
+		border-radius: 5px;
+		padding: 4px 7px;
+		font-size: 0.72rem;
+		font-weight: 600;
+		white-space: nowrap;
 	}
 
-	/* Увеличиваем отступы в списках, так как vw на телефоне слишком мал */
+	/* Адаптация остального контента под узкий экран */
+	.avtomoiki {
+		font-size: 1.3rem;
+		margin: 15px 10px;
+	}
+
+	.blue_div {
+		height: 45px;
+		margin-top: 20px;
+	}
+
+	.yslygi {
+		font-size: 1.25rem;
+	}
+
 	.yslygi_text_all {
-		margin: 15px;
+		margin: 15px 12px;
 	}
 
 	.p {
-		font-size: 1.3rem;
-		margin-bottom: 10px;
-	}
-
-	.ul {
-		padding-left: 20px;
-		font-size: 1rem;
-	}
-
-	.li {
+		font-size: 1.1rem;
 		margin-bottom: 8px;
 	}
 
-	/* Нижний синий блок */
+	.ul {
+		font-size: 0.92rem;
+		padding-left: 18px;
+	}
+
+	.li {
+		margin-bottom: 6px;
+	}
+
 	.container_last_blue {
-		padding: 15px;
+		padding: 15px 12px;
 		margin-bottom: 20px;
 	}
 
 	.p_s {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 
 	.ul_s {
-		padding-left: 18px;
+		padding-left: 16px;
 	}
 
 	.li_s {
-		font-size: 0.9rem;
-		margin-bottom: 6px;
+		font-size: 0.85rem;
+		margin-bottom: 5px;
 	}
 
-	/* Футер */
+	/* Компактный подвал в 2 строки */
 	.footer_box {
-		padding: 15px 10px;
+		min-height: auto;
+		padding: 8px 10px;
+	}
+
+	.box_text_footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2px;
 	}
 
 	.q, .oferta {
-		font-size: 1rem;
-		margin-bottom: 5px;
+		font-size: 0.75rem;
+		line-height: 1.2;
+		margin: 0;
 	}
 }
