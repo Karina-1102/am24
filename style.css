@@ -206,7 +206,7 @@ body {
 
 	/* Узкая шапка строго в одну строку */
 	.first_plashk {
-		height: 80px;
+		height: 70px;
 		padding: 0 12px;
 		gap: 6px;
 		flex-wrap: nowrap; /* запрещает перенос на вторую строку */
@@ -220,7 +220,7 @@ body {
 
 	.logo_img {
 		margin-left: 0;
-		height: 70%;
+		height: 60%;
 		width: auto;
 	}
 
@@ -236,8 +236,8 @@ body {
 		margin-left: auto;
 		display: flex;
 		align-items: center;
-		gap: 4px;
-		/* flex-shrink: 0; */
+		gap: 5px;
+		flex-shrink: 0;
 	}
 
 	.t {
@@ -305,18 +305,22 @@ body {
 	/* Компактный подвал в 2 строки */
 	.footer_box {
 		min-height: auto;
-		padding: 10px 10px;
+		padding: 15px 10px;
 	}
 
 	.box_text_footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 2px;
+		gap: 3px;
 	}
 
 	.q, .oferta {
 		font-size: 0.75rem;
 		/* margin: 0; */
+
+	.oferta{
+		margin-bottom:15px;
+	}
 	}
 }
