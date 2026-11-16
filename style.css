@@ -230,6 +230,7 @@ body {
 		white-space: nowrap; /* текст в одну строку */
 		overflow: hidden;
 		text-overflow: ellipsis; /* аккуратное троеточие, если не влезает */
+		flex-wrap: wrap;
 	}
 
 	/* Белые слова справа оформлены как кнопки в строку */
