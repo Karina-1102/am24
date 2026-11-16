@@ -234,7 +234,7 @@ body {
 
 	.city_text {
 		margin-left: 0;
-		font-size: 0.78rem;
+		font-size: 0.85rem;
 		white-space: nowrap; /* текст в одну строку */
 		overflow: hidden;
 		line-height: 1.2;
