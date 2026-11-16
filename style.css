@@ -207,7 +207,7 @@ body {
 	/* Узкая шапка строго в одну строку */
 	.first_plashk {
 		height: 70px;
-		padding: 0 12px;
+		padding: 0 20px;
 		gap: 6px;
 		flex-wrap: nowrap; /* запрещает перенос на вторую строку */
 	}
