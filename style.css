@@ -244,8 +244,8 @@ body {
 		margin-right: 0;
 		display: inline-block;
 		color: #fffcfc;
-		border-radius: 5px;
-		padding: 4px 7px;
+		
+		padding: 4px 5px;
 		font-size: 0.72rem;
 		font-weight: 600;
 		white-space: nowrap;
