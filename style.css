@@ -250,6 +250,7 @@ body {
 		align-items: center;
 		gap: 5px;
 		flex-shrink: 0;
+		font-size: 0.85rem;
 	}
 
 	.t {
