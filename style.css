@@ -229,7 +229,9 @@ body {
 		font-size: 0.78rem;
 		white-space: nowrap; /* текст в одну строку */
 		overflow: hidden;
-		
+		line-height: 1.2;
+		white-space: normal;
+		word-wrap: break-word;
 		flex-wrap: wrap;
 	}
 
