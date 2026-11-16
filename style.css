@@ -229,7 +229,7 @@ body {
 		font-size: 0.78rem;
 		white-space: nowrap; /* текст в одну строку */
 		overflow: hidden;
-		text-overflow: ellipsis; /* аккуратное троеточие, если не влезает */
+		
 		flex-wrap: wrap;
 	}
 
