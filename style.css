@@ -150,7 +150,7 @@ body {
 .container_last_blue{
 
 	background-color: #687182;
-	max-width: 1200px;          /* Жесткое ограничение ширины (размер смартфона) на компьютерах */
+	max-width: 1200px;          
 	min-height: 20vw; 
 	font-family: sans-serif;
 	color: #fffcfc;
@@ -203,34 +203,33 @@ body {
    МОБИЛЬНАЯ ВЕРСИЯ (ПЛАНШЕТЫ И ТЕЛЕФОНЫ)
    ========================================= */
 @media (max-width: 768px) {
-	/* Узкая чёрная полоса сверху */
 	.black_plashk {
 		height: 15px;
 	}
 
 	/* Узкая шапка строго в одну строку */
 	.first_plashk {
-		height: 48px;
+		height: 55px;
 		padding: 0 8px;
 		gap: 6px;
-		flex-wrap: nowrap; /* запрещает перенос на вторую строку */
+		flex-wrap: nowrap; 
 	}
 
 	.logo {
-		margin-right: 4px;
+		margin-right: 6px;
 		height: 100%;
 		flex-shrink: 0;
 	}
 
 	.logo_img {
 		margin-left: 0;
-		height: 60%;
+		height: 80%;
 		width: auto;
 	}
 
 	.city_text {
 		font-size: 0.78rem;
-		white-space: nowrap; /* текст в одну строку */
+		white-space: nowrap; 
 		overflow: hidden;
 		text-overflow: ellipsis; /* аккуратное троеточие, если не влезает */
 	}
