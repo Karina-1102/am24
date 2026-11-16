@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -65,12 +68,14 @@ body {
 	display: flex;
 }
 .t{
+	scroll-behavior: smooth;
 	text-decoration: none;
 	/* margin-right: 20px; */
 	margin-right: 3vw;
 	/* right:  100%; */
 	cursor: pointer;
 	transition: opacity 0.2s;
+	color: #fffcfc;
 }
 .t:hover {
 	opacity: 0.8;
@@ -78,6 +83,7 @@ body {
 
 .avtomoiki{
 	/* display: flex; */
+	margin-top: 2vw;
 	text-align: center;
 	font-size: clamp(1.7rem, 1.3vw, 3rem);
 	color: #fffcfc;
@@ -124,6 +130,7 @@ body {
 	margin-left: 3vw;
 	margin-bottom: 5vw;
 	margin-top: 1vw;
+	scroll-behavior: smooth;
 }
 .p{
 	font-size: clamp(1.7rem, 1.3vw, 3rem);
@@ -152,7 +159,7 @@ body {
 	color: #fffcfc;
 	padding-left: 3vw;
 	padding-right: 3vw;
-	margin-bottom: 3vw;
+	margin-bottom: 5vw;
 }
 .p_s{
 	font-size: clamp(1.2rem, 1.3vw, 3rem);
@@ -174,6 +181,7 @@ body {
 	flex-direction: column;
 	text-align: center;
 	padding: 1.5vw;
+	
 }
 .box_text_footer{
 	font-family: sans-serif;
@@ -329,4 +337,3 @@ body {
 		margin-bottom:10px;
 	}
 }
-
